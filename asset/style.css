@@ -1,1 +1,26 @@
 /* need to add display in order to show caculator on web app.  */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Gotham Rounded, sans-serif;
+    font-weight: normal; 
+}
+
+body {
+    margin: 0; 
+    padding: 0; 
+    background: linear-gradient(to right, #CDCE91FF, #EA738DFF); 
+}
+
+/* need to style the calculator-grid div it should wrap all of our different button and elments. we can set the display to the grid */
+/* we can use justify-content attribute to set it to the center of the screen. beside the align-content attribute can help align item to the center of the screen.  */
+/* set the calculator-grid vertically, you can do this by setting the min-height to 100vh. this means the caculator grid will fill 100% of the geight all the time.  */
+
+.calculator-grid {
+    display: grid; 
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
