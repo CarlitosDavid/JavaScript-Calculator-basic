@@ -19,8 +19,23 @@ body {
 .calculator-grid {
     display: grid; 
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
+    align-content: center;
     min-height: 100vh; 
     grid-template-columns: repeat(4, 100px);
     grid-template-rows: minmax(120px, auto) repeat(5, 100px);
 }
+
+.calculator-grid > button {
+    cursor: pointer; 
+    font-size: 2rem; 
+    border: 1px, solid #FFFFFF; 
+    outline: none; 
+    background-color: rbga(255, 255, 255, 0.75);
+}
+
+.calculator-grid > button:hover {
+    background-color: #a9a9a9; 
+}
+
+/* change the align-item attribute to align-content and set it to center.  */
